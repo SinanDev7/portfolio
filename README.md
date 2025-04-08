@@ -2,17 +2,6 @@
   Hola, I'm Sinan<br/>
   <a href="http://sinan.sms/" target="_blank">sinan.sms</a>
 </h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
-
-<br/>
-
-<center>
-
-  <img alt="Demo" src="./Images/readme-img1.png" />
-
-</center>
 
 <h3 align="center">
     🔹
@@ -29,25 +18,7 @@ You can fork this repo to modify and make changes of your own. Please give me pr
 
 My personal portfolio <a href="http://sinan.sms/" target="_blank">sinan.sms</a> which features some of my personal github learnings as well as my resume and technical skills.<br/>
 
-This project was built using these technologies.
-
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
-
-## Features
-
-**📖 Multi-Page Layout**
-
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
-
-**📱 Fully Responsive**
-
-
-## Usage Instructions
+This project was built with no coding experience.
 
 ### Show your support
 
