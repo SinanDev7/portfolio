@@ -25,6 +25,30 @@ This project was built with no coding experience.
 Give a ⭐ if you like my site!
 My Page is still under processing...:)
 
+
+## 🌐 My Personal CV (HTML/CSS)
+
+This is a sample HTML/CSS-based CV page I designed. Below is the source code:
+
+<details>
+<summary>Click to view code</summary>
+
+```html
+<!-- Paste your HTML code here between the triple backticks -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sinan's CV</title>
+  <style>
+    /* CSS here */
+  </style>
+</head>
+<body>
+  <!-- Body content here -->
+</body>
+</html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
