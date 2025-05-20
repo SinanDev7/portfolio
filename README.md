@@ -42,3 +42,16 @@ This is a sample HTML/CSS-based CV page I designed. Below is the source code:
   </footer>
 </body>
 </html>
+
+
+
+---
+
+### What to do next:
+
+- Save your full CV HTML as a file called `index.html` (or any name) in your repo or host it on your personal domain.
+- Keep the above `README.md` content in your repo’s root.
+- When people visit your repo on GitHub, they get a nice intro and can click to see your full CV online.
+
+If you want, I can also help prepare the full standalone `index.html` CV file for you to put in your repo or site. Just let me know!
+
