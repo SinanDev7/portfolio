@@ -1,5 +1,5 @@
 <h2 align="center">
-  Hola, I'm Sinan<br/>
+  Hi!, I'm Sinan<br/>
   <a href="http://sinan.sms/" target="_blank">sinan.sms</a>
 </h2>
 
