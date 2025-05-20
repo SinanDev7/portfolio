@@ -142,41 +142,7 @@ This is a sample HTML/CSS-based CV page I designed. Below is the source code:
     <div class="section-block">
       <h2>Professional Summary</h2>
       <p>IT Support Specialist with over 9 years of experience in desktop support, asset management, Microsoft 365, and network troubleshooting. Previously worked at DHL Global Forwarding Sri Lanka. Skilled in ServiceNow, Cisco networking, Bomgar remote access, and technical documentation.</p>
-    </div>
-
-    <div class="section-block">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>DHL Global Forwarding Sri Lanka</strong> – IT Support Specialist (Jun 2024 – May 2025)</li>
-        <li><strong>Ainsteam Computers</strong> – IT Technician</li>
-        <li><strong>Build Angles Engineering (Pvt) Ltd</strong> – IT & Document Management Assistant</li>
-        <li><strong>Tabaldi Tradings and Contracting WLL, Qatar</strong> – Administrative Assistant</li>
-        <li><strong>NPS Qatar</strong> – Technical Clerk</li>
-      </ul>
-    </div>
-
-    <div class="section-block">
-      <h2>Certifications</h2>
-      <ul>
-        <li>AZ-900: Microsoft Azure Fundamentals (Scheduled – May 25, 2025)</li>
-        <li>MCP, MCTS, MCITP – Windows Server & AD</li>
-        <li>Over 25+ certifications from Coursera, LinkedIn Learning, Microsoft Learn</li>
-      </ul>
-    </div>
-
-    <div class="section-block">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span>Microsoft 365</span>
-        <span>Windows Server</span>
-        <span>Active Directory</span>
-        <span>ServiceNow</span>
-        <span>Bomgar</span>
-        <span>Cisco Networking</span>
-        <span>IT Asset Management</span>
-        <span>Remote Desktop Tools</span>
-      </div>
-    </div>
+    
   </section>
 
   <footer>
