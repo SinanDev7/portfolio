@@ -10,7 +10,7 @@
     <a href="https://www.facebook.com/sinan.sms">Facebook</a>
 </h3>
 
-## Hola, Amigos!
+## Hello!
 
 You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [sinan.sms](https://github.com/SinanDev7/sinan.sms). Thanks!
 
