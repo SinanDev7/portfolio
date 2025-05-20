@@ -30,7 +30,7 @@ My Page is still under processing...:)
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sinan's CV</title>
+  <title>Sinan's Complete CV</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
