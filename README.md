@@ -87,13 +87,48 @@ My Page is still under processing...:)
       background: #f1f1f1;
       font-size: 0.9rem;
     }
+
+    .social-links {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #0078D4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .profile-links {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .profile-links h2, .profile-links h3 {
+      margin: 0.2rem 0;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Abdussalam Mohammadu Sinan</h1>
-    <p>IT Support Specialist | Colombo, Sri Lanka | sinan7@linkedin</p>
+    <p>IT Support Specialist | Colombo, Sri Lanka | <a href="https://www.linkedin.com/in/sinan7" style="color:white; text-decoration: underline;">sinan7@linkedin</a></p>
   </header>
+
+  <div class="profile-links">
+    <h2>
+      Hi!, I'm Sinan<br/>
+      <a href="http://sinan.sms/" target="_blank">sinan.sms</a>
+    </h2>
+
+    <h3>
+      🔹
+      <a href="https://www.linkedin.com/in/sinan7">Linked In</a> &nbsp; &nbsp;
+      🔹
+      <a href="https://www.facebook.com/sinan.sms">Facebook</a>
+    </h3>
+  </div>
 
   <section>
     <div class="section-block">
@@ -141,4 +176,3 @@ My Page is still under processing...:)
   </footer>
 </body>
 </html>
-
