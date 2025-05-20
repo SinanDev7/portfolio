@@ -30,34 +30,15 @@ My Page is still under processing...:)
 
 This is a sample HTML/CSS-based CV page I designed. Below is the source code:
 
-<details>
-<summary>Click to view code</summary>
-
-```html
-<!-- Paste your HTML code here between the triple backticks -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Sinan's CV</title>
-  <style>
-    /* CSS here */
-  </style>
-</head>
-<body>
-  <!-- Body content here -->
-</body>
-</html>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sinan's Complete CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sinan's CV</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       background: linear-gradient(to right, #e0eafc, #cfdef3);
       color: #333;
@@ -77,14 +58,18 @@ This is a sample HTML/CSS-based CV page I designed. Below is the source code:
 
     header p {
       font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
 
     section {
-      padding: 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
 
     h2 {
       color: #0078D4;
+      margin-bottom: 0.7rem;
     }
 
     .section-block {
@@ -95,13 +80,17 @@ This is a sample HTML/CSS-based CV page I designed. Below is the source code:
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
+    ul {
+      padding-left: 1.2rem;
+    }
+
     .skills span {
       display: inline-block;
       background: #0078D4;
       color: white;
       padding: 0.3rem 0.7rem;
       border-radius: 20px;
-      margin: 0.3rem;
+      margin: 0.3rem 0.3rem 0.3rem 0;
       font-size: 0.9rem;
     }
 
@@ -110,6 +99,7 @@ This is a sample HTML/CSS-based CV page I designed. Below is the source code:
       padding: 1rem;
       background: #f1f1f1;
       font-size: 0.9rem;
+      margin-top: 3rem;
     }
 
     .social-links {
@@ -122,37 +112,24 @@ This is a sample HTML/CSS-based CV page I designed. Below is the source code:
       color: #0078D4;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.1rem;
     }
 
-    .profile-links {
-      text-align: center;
-      margin: 2rem 0;
-    }
-
-    .profile-links h2, .profile-links h3 {
-      margin: 0.2rem 0;
+    .social-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Abdussalam Mohammadu Sinan</h1>
-    <p>IT Support Specialist | Colombo, Sri Lanka | <a href="https://www.linkedin.com/in/sinan7" style="color:white; text-decoration: underline;">sinan7@linkedin</a></p>
+    <p>IT Support Specialist | Colombo, Sri Lanka</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/sinan7" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+      <a href="https://www.facebook.com/sinan.sms" target="_blank" rel="noopener noreferrer">Facebook</a> |
+      <a href="http://sinan.sms/" target="_blank" rel="noopener noreferrer">sinan.sms</a>
+    </div>
   </header>
-
-  <div class="profile-links">
-    <h2>
-      Hi!, I'm Sinan<br/>
-      <a href="http://sinan.sms/" target="_blank">sinan.sms</a>
-    </h2>
-
-    <h3>
-      🔹
-      <a href="https://www.linkedin.com/in/sinan7">Linked In</a> &nbsp; &nbsp;
-      🔹
-      <a href="https://www.facebook.com/sinan.sms">Facebook</a>
-    </h3>
-  </div>
 
   <section>
     <div class="section-block">
