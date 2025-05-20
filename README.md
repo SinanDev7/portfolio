@@ -39,7 +39,7 @@ My Page is still under processing...:)
   <section>
     <div class="section-block">
       <h2>Professional Summary</h2>
-      <p>IT Support Specialist with over 9 years of experience in desktop support, asset management, Microsoft 365, and network troubleshooting. Previously worked at DHL Global Forwarding Sri Lanka. Skilled in ServiceNow, Cisco networking, Bomgar remote access, and technical documentation.</p>
+      <p>IT Support Specialist with over 10 years of experience in desktop support, asset management, Microsoft 365, and network troubleshooting. Previously worked at DHL Global Forwarding Sri Lanka. Skilled in ServiceNow, Cisco networking, Bomgar remote access, and technical documentation.</p>
     
   </section>
 
