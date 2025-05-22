@@ -3,7 +3,7 @@
 </h2>
 
 <h3 align="center">
-    🔹
+    ◇
     <a href="https://www.linkedin.com/in/sinan7">Linked In</a> &nbsp; &nbsp;
     </h3>
 
