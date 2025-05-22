@@ -1,76 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desktop Support Technician - Job Description</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #ffffff;
-            color: #000000;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #0247cfc4; /* DHL Yellow */
-            padding: 20px 40px;
-        }
-        .dhl-header {
-            font-size: 18px;
-            color: #0b0900; /* DHL Red */
-            font-weight: bold;
-        }
-        h1 {
-            color: #0f0000;
-            margin: 0;
-        }
-        main {
-            padding: 40px;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 25px;
-        }
-        ul li::marker {
-            color: #140276; /* Red bullets */
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #2e1901;
-        }
-        strong {
-            color: #0300b9;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desktop Support Technician - Job Description</title>
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f0f8ff, #e0fff0);
+      color: #000000;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 255, 0.1); /* Soft Blue */
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(0, 0, 255, 0.2);
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #000; /* Black */
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .dhl-header {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #008000; /* Green */
+      text-transform: lowercase;
+    }
+
+    .info p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .info strong {
+      color: #0000cc; /* Blue */
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      color: #d00000; /* Red */
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    li::marker {
+      color: #0000ff; /* Blue bullets */
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .dhl-header {
+        font-size: 0.95rem;
+      }
+
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-
+  <div class="container">
     <header>
-        <h1>Desktop Support Technician</h1>
-        <div class="dhl-header">Job Description at ACS Computers</div>
+      <h1>Desktop Support Technician</h1>
+      <div class="dhl-header">job description at acs computers</div>
     </header>
 
-    <main>
-        <p><strong>Company:</strong> ACS Computer Solutions - Sri Lanka</p>
-        <p><strong>Duration:</strong> Jan 2012 - Nov 2013</p>
+    <div class="info">
+      <p><strong>Company:</strong> ACS Computer Solutions - Sri Lanka</p>
+      <p><strong>Duration:</strong> Jan 2012 - Nov 2013</p>
+    </div>
 
-        <h2>Job Description</h2>
-        <ul>
-            <li>Assembled and maintained desktop computers & laptops to meet client specifications</li>
-            <li>Installed and configured various operating systems, including Windows 7,8, and Server editions.</li>
-            <li>Installed and configured hardware components, software applications, and system drivers.</li>
-            <li>Set up and managed ADSL and wireless routers for SOHO (Small Office/Home Office) networks.</li>
-            <li>Performed server set up configuration, and basic maintenance (Windows Server Environments).</li>
-            <li>Diagnosed and resolved hardware & software issues to minimize downtime and support efficiency.</li>
-            <li>Managed installation and configuration of perepherals such as printers, scanners, and external drives.</li>
-            <li>Ensured all system setups met performance and usability standards based on user requirements.</li>
-        </ul>
-    </main>
+    <h2>Job Description</h2>
+    <ul>
+      <li>Assembled and maintained desktop computers & laptops to meet client specifications.</li>
+      <li>Installed and configured various operating systems, including Windows 7, 8, and Server editions.</li>
+      <li>Installed and configured hardware components, software applications, and system drivers.</li>
+      <li>Set up and managed ADSL and wireless routers for SOHO (Small Office/Home Office) networks.</li>
+      <li>Performed server setup configuration and basic maintenance (Windows Server Environments).</li>
+      <li>Diagnosed and resolved hardware & software issues to minimize downtime and support efficiency.</li>
+      <li>Managed installation and configuration of peripherals such as printers, scanners, and external drives.</li>
+      <li>Ensured all system setups met performance and usability standards based on user requirements.</li>
+    </ul>
 
+    <footer>
+      © 2025 by Sinan | ACS Computers Job Description
+    </footer>
+  </div>
 </body>
 </html>
