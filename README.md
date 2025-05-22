@@ -13,13 +13,8 @@ My personal portfolio <a href="https://sinandev7.github.io/portfolio/" target="_
 
 This project was built with no coding experience.
 
-### Show your support
-
-Give a ⭐ if you like my site!
-My Page is still under processing...:)
-
   <footer>
-    &copy; 2025 Sinan | Designed with 💻
+    &copy; S I N A N 2025
   </footer>
 </body>
 </html>
