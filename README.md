@@ -9,12 +9,10 @@
 
 My personal portfolio <a href="https://sinandev7.github.io/portfolio/" target="_blank">Sinan's</a> which features some of my personal github learnings as well as my resume and technical skills.<br/>
 
-This project was built with no coding experience.
+This was built with no coding experience.
 
   <footer>
-    <h1>
-    &copy; S I N A N 2025
-    </h1>
+    &copy; SiNAN 2025
   </footer>
 </body>
 </html>
