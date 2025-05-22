@@ -9,8 +9,6 @@
     <a href="https://www.facebook.com/sinan.sms">Facebook</a>
 </h3>
 
-## Built With
-
 My personal portfolio <a href="https://sinandev7.github.io/portfolio/" target="_blank">Sinan's</a> which features some of my personal github learnings as well as my resume and technical skills.<br/>
 
 This project was built with no coding experience.
