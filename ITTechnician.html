@@ -1,72 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Technician - Job Description</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #eeeee9;
-            color: #333;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #040f06; /* DHL Yellow */
-            padding: 20px 40px;
-        }
-        .dhl-header {
-            font-size: 18px;
-            color: #f8bf02; /* DHL Red */
-            font-weight: bold;
-        }
-        h1 {
-            color: #fdfdfd;
-            margin: 0;
-        }
-        main {
-            padding: 40px;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 25px;
-        }
-        ul li::marker {
-            color: #021b97; /* Red bullets */
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #2e1901;
-        }
-        strong {
-            color: #02409b;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT Technician - Job Description</title>
+  <style>
+    /* National Geographic colors */
+    :root {
+      --natgeo-yellow: #FFCC00;
+      --dark-bg: #1E1E1E;
+      --glass-bg: rgba(255, 204, 0, 0.15);
+      --text-color: #F5F5F5;
+      --text-muted: #DDD;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #2b2b2b, #1e1e1e);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      background: var(--glass-bg);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(255, 204, 0, 0.25);
+      padding: 40px 50px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 35px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--natgeo-yellow);
+      text-shadow: 0 0 6px rgba(255, 204, 0, 0.7);
+    }
+
+    .job-location {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: var(--dark-bg);
+      background-color: var(--natgeo-yellow);
+      padding: 10px 20px;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(255, 204, 0, 0.4);
+      user-select: none;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 8px 0;
+      color: var(--text-muted);
+    }
+
+    strong {
+      color: var(--natgeo-yellow);
+      font-weight: 600;
+    }
+
+    h2 {
+      color: var(--natgeo-yellow);
+      font-size: 1.8rem;
+      margin: 30px 0 15px;
+      text-shadow: 0 0 5px rgba(255, 204, 0, 0.6);
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    ul li::marker {
+      color: var(--natgeo-yellow);
+      font-weight: 700;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      font-size: 1.05rem;
+    }
+
+    a {
+      color: var(--natgeo-yellow);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .job-location {
+        font-size: 1rem;
+        padding: 8px 16px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      ul li {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-
+  <div class="container">
     <header>
-        <h1>IT Technician</h1>
-        <div class="dhl-header">Job Description at Ainsteam</div>
+      <h1>IT Technician</h1>
+      <div class="job-location">Job Description at Ainsteam</div>
     </header>
 
-    <main>
-        <p><strong>Company:</strong> Ainsteam Computers, Sri Lanka</p>
-        <p><strong>Duration:</strong> July 2020 - May 2024</p>
+    <p><strong>Company:</strong> Ainsteam Computers, Sri Lanka</p>
+    <p><strong>Duration:</strong> July 2020 - May 2024</p>
 
-        <h2>Job Description</h2>
-        <ul>
-            <li>Diagnose and resolve hardware and software issues with a 95% performance rate, specializing in virus/ malware removal and achieving a 20% improvement rate in system optimization.</li>
-            <li>Provide expert advice on system selection, ensuring a 98% customer satisfaction rate. Manage 5-10 daily laptop and PC repairs, including data backup, restore and recovery.</li>
-            <li>Install, configure and troubleshoot operating systems and network devices while staying updated with technological advancements.</li>
-
-        </ul>
-    </main>
-
+    <h2>Job Description</h2>
+    <ul>
+      <li>Diagnose and resolve hardware and software issues with a 95% performance rate, specializing in virus/ malware removal and achieving a 20% improvement rate in system optimization.</li>
+      <li>Provide expert advice on system selection, ensuring a 98% customer satisfaction rate. Manage 5-10 daily laptop and PC repairs, including data backup, restore and recovery.</li>
+      <li>Install, configure and troubleshoot operating systems and network devices while staying updated with technological advancements.</li>
+    </ul>
+  </div>
 </body>
 </html>
+
+
+
