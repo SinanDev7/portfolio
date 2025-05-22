@@ -5,133 +5,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sinan's CV</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: linear-gradient(to bottom, #ffffff1b, #f3f3f582);
-      color: #0d0144fd;
-      line-height: 1.5;
-    }
+    
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffffff1b, #f3f3f582);
+  color: #0d0144fd;
+  line-height: 1.6;
+}
 
-    header {
-      background-color: #fcc501c6;
-      color: rgb(1, 9, 64);
-      padding: 1rem;
-      text-align: center;
-    }
+/* Header */
+header {
+  background-color: #fcc501c6;
+  color: #010940;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.9rem;
-    }
+header h1 {
+  font-size: 2.7rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
 
-    header p {
-      font-size: 2rem; 
-      font-weight: 600;
-      margin-top: 0.3rem;
-    }
+header p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
 
-    section {
-      padding: 5rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
+/* Section Container */
+section {
+  padding: 3rem 1.5rem;
+  max-width: 960px;
+  margin: auto;
+}
 
-    h2 {
-      color: #0c0253;
-      margin-bottom: 1rem;
-    }
+/* Section Title */
+h2 {
+  color: #0c0253;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
-    .section-block {
-      background: rgba(191, 193, 214, 0.26);
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 11px;
-      box-shadow: 0 3px 8px rgb(178, 23, 245);
-    }
+/* Content Box */
+.section-block {
+  background-color: rgba(233, 232, 250, 0.2);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(178, 23, 245, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .skills span {
-      display: inline-block;
-      background: #9792d706;
-      color: rgb(3, 0, 21);
-      padding: 0.3rem 0.7rem;
-      border-radius: 11px;
-      margin: 0.3rem;
-      font-size: 0.9rem;
-      box-shadow: 0 3px 8px rgba(133, 17, 191, 0.71);
-    }
+.section-block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(133, 17, 191, 0.5);
+}
 
-    footer {
-      text-align: center;
-      padding: 0.7rem;
-      background: #fcc501c6;
-      font-size: 0.9rem;
-    }
+/* Skills Tags */
+.skills span {
+  display: inline-block;
+  background: #e0dfff;
+  color: #030015;
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(133, 17, 191, 0.4);
+}
 
-    .social-links {
-      text-align: center;
-      margin-top: 1rem;
-    }
+/* Profile Links Section */
+.profile-links {
+  text-align: center;
+  padding: 1.5rem;
+}
 
-    .social-links a {
-      margin: 0 10px;
-      color: #13025dec;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.profile-links h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
 
-    .profile-links {
-      text-align: center;
-      margin: 1rem 0;
-    }
+.profile-links h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
 
-    .profile-links h2, .profile-links h3 {
-      margin: 0.1rem 0;
-    }
+/* Social Links */
+.social-links, .profile-links a {
+  text-align: center;
+  display: inline-block;
+  margin: 0.3rem 0.6rem;
+  color: #2f0366;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
 
-    /* Responsive styles */
+.profile-links a:hover {
+  color: #a100ff;
+  text-decoration: underline;
+}
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #fcc501c6;
+  font-size: 0.95rem;
+  color: #010940;
+  margin-top: 2rem;
+}
 
-      header p {
-        font-size: 1.4rem;
-      }
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.1rem;
+  }
 
-      section {
-        padding: 2rem 1rem;
-      }
+  header p {
+    font-size: 1.2rem;
+  }
 
-      .section-block {
-        padding: 1rem;
-        font-size: 0.9rem;
-      }
+  section {
+    padding: 2rem 1rem;
+  }
 
-      h2 {
-        font-size: 1.2rem;
-      }
+  .section-block {
+    font-size: 0.95rem;
+    padding: 1.2rem;
+  }
 
-      footer {
-        font-size: 0.8rem;
-      }
+  h2 {
+    font-size: 1.4rem;
+  }
 
-      .profile-links h2 {
-        font-size: 1.4rem;
-      }
+  .profile-links h2 {
+    font-size: 1.4rem;
+  }
 
-      .profile-links h3 {
-        font-size: 1rem;
-      }
-    }
+  .profile-links h3 {
+    font-size: 1rem;
+  }
 
-    @media (min-width: 769px) {
-      /* For larger desktops - slightly increase max width */
-      section {
-        max-width: 1000px;
-      }
-    }
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    max-width: 1024px;
+  }
+}
+
+
   </style>
 </head>
 <body>
