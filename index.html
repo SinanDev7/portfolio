@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<link rel="stylesheet" href="Styles.css" />
-  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sinan's CV</title>
@@ -13,6 +10,7 @@
       margin: 0;
       background: linear-gradient(to bottom, #ffffff1b, #f3f3f582);
       color: #0d0144fd;
+      line-height: 1.5;
     }
 
     header {
@@ -30,14 +28,18 @@
     header p {
       font-size: 2rem; 
       font-weight: 600;
+      margin-top: 0.3rem;
     }
 
     section {
-      padding: 5rem;
+      padding: 5rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     h2 {
       color: #0c0253;
+      margin-bottom: 1rem;
     }
 
     .section-block {
@@ -57,7 +59,6 @@
       margin: 0.3rem;
       font-size: 0.9rem;
       box-shadow: 0 3px 8px rgba(133, 17, 191, 0.71);
-
     }
 
     footer {
@@ -81,14 +82,56 @@
 
     .profile-links {
       text-align: center;
-      margin: rem 0;
+      margin: 1rem 0;
     }
 
     .profile-links h2, .profile-links h3 {
       margin: 0.1rem 0;
     }
 
-    
+    /* Responsive styles */
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      header p {
+        font-size: 1.4rem;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+
+      .section-block {
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      footer {
+        font-size: 0.8rem;
+      }
+
+      .profile-links h2 {
+        font-size: 1.4rem;
+      }
+
+      .profile-links h3 {
+        font-size: 1rem;
+      }
+    }
+
+    @media (min-width: 769px) {
+      /* For larger desktops - slightly increase max width */
+      section {
+        max-width: 1000px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -98,20 +141,11 @@
   </header>
 
   <div class="profile-links">
-    <h2>
-      Contact Me<br/>
-    </h2>
-
+    <h2>Contact Me</h2>
     <h3>
-      🔹
-        <a href="https://www.linkedin.com/in/sinan7">Linkedin</a> &nbsp; &nbsp;   
-
-      🔹
-        <a href="https://www.twitter.com/sinan3248">Twitter</a> &nbsp; &nbsp;   
-
-      🔹
-        <a href="https://www.facebook.com/sinan.sms">Facebook</a> &nbsp; &nbsp;   
-
+      🔹 <a href="https://www.linkedin.com/in/sinan7" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp;&nbsp; 
+      🔹 <a href="https://www.twitter.com/sinan3248" target="_blank" rel="noopener noreferrer">Twitter</a> &nbsp;&nbsp; 
+      🔹 <a href="https://www.facebook.com/sinan.sms" target="_blank" rel="noopener noreferrer">Facebook</a>
     </h3>
   </div>
 
@@ -261,7 +295,7 @@
              <b>Executive Member (2015 – Present)</b>
              <div class="sub-list"> <i>
                  - Created and managed social media accounts, and designed logo for AFWA.</i></div></div>
-             
+              
       </ul>
     </div>
 
