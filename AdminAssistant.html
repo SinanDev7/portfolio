@@ -1,71 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrative Assistant - Job Description</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #ffffff;
-            color: #000000;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #1fe89884; /* DHL Yellow */
-            padding: 20px 40px;
-        }
-        .dhl-header {
-            font-size: 18px;
-            color: #0c0a00; /* DHL Red */
-            font-weight: bold;
-        }
-        h1 {
-            color: #0f0000;
-            margin: 0;
-        }
-        main {
-            padding: 40px;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 25px;
-        }
-        ul li::marker {
-            color: #140276; /* Red bullets */
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #2e1901;
-        }
-        strong {
-            color: #0901a3;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Administrative Assistant - Tabaldi Tradings</title>
+  <style>
+    /* Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f1f1f1, #e0ffe0);
+      color: #0d0d0d;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .dhl-header {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #000;
+      text-transform: lowercase;
+    }
+
+    .info p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .info strong {
+      color: #008000; /* green */
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      color: #d00000; /* red */
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    li::marker {
+      color: #fcc500; /* yellow */
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .dhl-header {
+        font-size: 0.95rem;
+      }
+
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-
+  <div class="container">
     <header>
-        <h1>Administrative Assistant</h1>
-        <div class="dhl-header">Job Description at Tabaldi Tradings</div>
+      <h1>Administrative Assistant</h1>
+      <div class="dhl-header">job description at tabaldi tradings</div>
     </header>
 
-    <main>
-        <p><strong>Company:</strong> Tabaldi Tradings & Contracting WLL, Doha - Qatar</p>
-        <p><strong>Duration:</strong> Jan 2016 - Aug 2016</p>
+    <div class="info">
+      <p><strong>Company:</strong> Tabaldi Tradings & Contracting WLL, Doha - Qatar</p>
+      <p><strong>Duration:</strong> Jan 2016 - Aug 2016</p>
+    </div>
 
-        <h2>Job Description</h2>
-        <ul>
-            <li>Achieved 100% accuracy in data entry, ensuring efficient record keeping within electronic system. </li>
-            <li>Maintained customer satisfaction rate of 98%.</li>
-            <li>Provided comprehensive administrative support, including scheduling appointments and coordinating meetings.</li>
-        </ul>
-    </main>
+    <h2>Job Description</h2>
+    <ul>
+      <li>Achieved 100% accuracy in data entry, ensuring efficient record keeping within electronic system.</li>
+      <li>Maintained customer satisfaction rate of 98%.</li>
+      <li>Provided comprehensive administrative support, including scheduling appointments and coordinating meetings.</li>
+    </ul>
 
+    <footer>
+      © 2025 by Sinan | Tabaldi Job Description
+    </footer>
+  </div>
 </body>
 </html>
