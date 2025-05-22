@@ -14,8 +14,9 @@ My personal portfolio <a href="https://sinandev7.github.io/portfolio/" target="_
 This project was built with no coding experience.
 
   <footer>
-    allign=center
+    <h5>
     &copy; S I N A N 2025
+    </h5>
   </footer>
 </body>
 </html>
