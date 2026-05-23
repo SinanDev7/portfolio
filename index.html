@@ -7,256 +7,374 @@
   <title>Sinan's CV</title>
 
   <style>
+    /* Base Styles */
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #f5f7ff, #fff0f6, #e8f9ff, #fefae0);
-      color: #1a1a1a;
+      background: linear-gradient(to bottom, #ffffff1b, #f3f3f582);
+      color: #0d0144fd;
       line-height: 1.6;
     }
 
-    header {
-      background: linear-gradient(90deg, #0072ff, #7b2ff7, #ff4ecd, #ffb703);
-      color: white;
-      padding: 2rem 1rem;
+    /* Add vertical bar before section titles */
+    h2 {
+      position: relative;
+      padding-left: 20px;
+      color: #0c0253;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-      border-bottom-left-radius: 25px;
-      border-bottom-right-radius: 25px;
     }
 
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-      letter-spacing: 2px;
+    h2::before {
+      content: "|";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 2rem;
+      line-height: 1;
+      color: #e288f250;
+      font-weight: 0;
     }
 
-    header p {
-      font-size: 1.3rem;
-      margin-top: 10px;
-      opacity: 0.95;
-    }
-
-    .profile-links {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .profile-links a {
-      color: #7b2ff7;
-      font-weight: bold;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    .profile-links a:hover {
-      color: #ff4ecd;
-      text-decoration: underline;
-    }
-
+    /* Add vertical bar on the left of section blocks */
     .section-block {
-      max-width: 1000px;
-      margin: 25px auto;
-      padding: 25px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.75);
-      backdrop-filter: blur(12px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.10);
-      border-left: 6px solid;
-      border-image: linear-gradient(180deg, #0072ff, #7b2ff7, #ff4ecd, #ffb703) 1;
-      transition: 0.3s ease;
+      position: relative;
+      padding-left: 20px;
+      background-color: rgba(233, 232, 250, 0.2);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(178, 23, 245, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section-block::before {
+      content: "|";
+      position: absolute;
+      left: 0;
+      top: 1.5rem;
+      font-size: 2rem;
+      color: rgba(151, 91, 255, 0.3); /* Fixed: soft visible purple */
+      font-weight: 700;
     }
 
     .section-block:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(133, 17, 191, 0.5);
     }
 
-    h2 {
+    /* Header */
+    header {
+      background: linear-gradient(to top, #00a2ed, #0078d4);
+      color: #fbfbfc;
+      padding: 1.5rem 1rem;
       text-align: center;
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      background: linear-gradient(90deg, #0072ff, #ff4ecd, #ffb703);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    p, li {
-      font-size: 15px;
-      line-height: 1.6;
+    header h1 {
+      font-size: 2.7rem;
+      margin: 0;
+      letter-spacing: 1px;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 10px;
-      padding: 8px;
-      border-radius: 8px;
-      transition: 0.2s;
-    }
-
-    li:hover {
-      background: linear-gradient(90deg, #f3f0ff, #fff0f6);
-    }
-
-    a {
-      color: #7b2ff7;
+    header p {
+      font-size: 1.6rem;
       font-weight: 600;
-      text-decoration: none;
+      margin-top: 0.3rem;
     }
 
-    a:hover {
-      color: #ff4ecd;
+    /* Skills Tags */
+    .skills span {
+      display: inline-block;
+      background: #e0dfff;
+      color: #030015;
+      padding: 0.4rem 0.8rem;
+      margin: 0.3rem;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(133, 17, 191, 0.4);
+    }
+
+    /* Profile Links Section */
+    .profile-links {
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .profile-links h2 {
+      font-size: 1.7rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-links h3 {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+
+    /* Social Links */
+    .social-links,
+    .profile-links a {
+      text-align: center;
+      display: inline-block;
+      margin: 0.3rem 0.6rem;
+      color: #2f0366;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .profile-links a:hover {
+      color: #a100ff;
       text-decoration: underline;
     }
 
-    .skills span {
-      display: inline-block;
-      margin: 5px;
-      padding: 7px 14px;
-      border-radius: 25px;
-      font-size: 13px;
-      color: white;
-      background: linear-gradient(90deg, #0072ff, #7b2ff7, #ff4ecd);
-    }
-
+    /* Footer */
     footer {
       text-align: center;
-      padding: 20px;
-      background: linear-gradient(90deg, #ffb703, #ff4ecd);
-      color: #111;
-      font-weight: bold;
-      margin-top: 40px;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
+      padding: 1rem;
+      background: #fcc501c6;
+      font-size: 0.95rem;
+      color: #010940;
+      margin-top: 2rem;
     }
 
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.1rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+
+      .section-block {
+        font-size: 0.95rem;
+        padding: 1.2rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      .profile-links h2 {
+        font-size: 1.4rem;
+      }
+
+      .profile-links h3 {
+        font-size: 1rem;
+      }
+
+      footer {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      section {
+        max-width: 1024px;
+      }
+    }
   </style>
 
+
+
 </head>
-
 <body>
+  <header>
+    <h1>SINAN MOHAMMAD</h1>
+    <p>IT Professional</p>
+  </header>
 
-<header>
-  <h1>SINAN MOHAMMAD</h1>
-  <p>IT Professional</p>
-</header>
+  <div class="profile-links">
+    <h2>Contact Me</h2>
+    <h3>
+      🔹 <a href="https://www.linkedin.com/in/sinan7" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp;&nbsp; 
+      🔹 <a href="https://www.twitter.com/sinan3248" target="_blank" rel="noopener noreferrer">Twitter</a> &nbsp;&nbsp; 
+      🔹 <a href="https://www.facebook.com/sinan.sms" target="_blank" rel="noopener noreferrer">Facebook</a>
+    </h3>
+  </div>
 
-<div class="profile-links">
-  <h2>Contact Me</h2>
-  <h3>
-    🔹 <a href="https://www.linkedin.com/in/sinan7">LinkedIn</a>
-    🔹 <a href="https://www.twitter.com/sinan3248">Twitter</a>
-    🔹 <a href="https://www.facebook.com/sinan.sms">Facebook</a>
-  </h3>
+  <section>
+    <div class="section-block">
+      <h2>Professional Summary</h2>
+      <p>
+         An experienced IT Professional with over 7 years of combined experience in IT support, IT asset management, 
+         ServiceNow, Microsoft 365, and Azure fundamentals across logistics, IT, construction, and oil & gas sectors. Skilled in 
+         technical issue resolution and end-user support. I am known for my adaptability and ability to thrive in any environment. 
+         Eager to embark on new challenges and contribute my expertise to innovative projects.
+      </p>
+    </div>
+
+    <div class="section-block">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Tata Consultancy Services</strong> – <a href="ITField.html">IT Field Engineer</a> | October 2025 – Present</li>
+        <li><strong>DHL Global Forwarding</strong> – <a href="ITSupport.html">IT Support Engineer</a> | June 2024 – May 2025</li>
+        <li><strong>Ainsteam Computers</strong> – <a href="ITTechnician.html">IT Technician</a> | July 2020 – May 2024</li>
+        <li><strong>Build Angles Engineering (Pvt) Ltd</strong> – <a href="ITAssistant.html">IT & Document Management Assistant</a> | Jan 2017 – Dec 2019</li>
+        <li><strong>Tabaldi Tradings & Contracting WLL (Qatar)</strong> – <a href="AdminAssistant.html">Administrative Assistant</a> | Jan 2016 – Aug 2016</li>
+        <li><strong>National Petroleum Services (Qatar)</strong> – <a href="TechnicalClerk.html">Technical Clerk</a> | April 2014 – April 2015</li>
+        <li><strong>ACS Computer Solutions</strong> – <a href="DesktopSupport.html">Desktop Support Technician</a> | Jan 2012 – Nov 2013</li>
+        <li><strong>FINZ Japan Cycle Traders</strong> – <a href="InvoiceClerk.html">Invoice Clerk</a> | Oct 2010 – Nov 2011</li>
+        <li><strong>NetAssist International</strong> – <a href="NetworkEngineer.html">Trainee Network Engineer</a> | Sep 2010 – Sep 2011</li>
+        
+      </ul>
+    </div>
+
+    <div class="section-block">
+      <h2>Professional Certifications</h2>
+      <ul>
+        <li>Microsoft Azure fundamentals (AZ-900)</li>
+        <li>Microsoft Certified Professional (MCP)</li>
+        <li>Microsoft Certified Technology Specialist (MCTS)</li>
+        <li>Computer Hardware & Networking (Comp TIA+)</li>
+        <li>Over 25+ certifications from Coursera, LinkedIn Learning, Microsoft Learn</li>
+      </ul>
+    </div>
+
+
+    <div class="section-block">
+      <h2>Education</h2>
+      <ul>
+        <li>BSc in Computer Science (Reading)</li>
+        University of People - Online (Expected Completion: 2029)
+        <li>Microsoft Certified Network Engineering with Cisco</li>
+        ANC-NetAsssist International - 2011
+        <li>G.C.E. Advanced Level - Commerce Stream</li>
+        Kekunagolla National School - 2010
+        <li>Diploma in Computer Studies</li>
+        BIT Computer Services - 2007
+      </ul>
+    </div>
+
+
+    <div class="section-block">
+      <h2>Enterpreneurial & Freelance Experience </h2>
+      <ul>
+        <li><b>Herbal Medicine Business</b></li>
+            <i>Founded and managed an herbal medical shop, providing herbal remedies and wellness products to customers. Handled inventory management, sales, and customer service to ensure a positive experience for customers.</i>
+        <li><b>Poultry Farming</b></li>
+            <i>Established and operated a small-scale poultry farm during career break, overseeing daily operations and managing livestock health. Implemented business strategies to optimize productivity and profitability.</i>
+        <li><b>Freelance Computer Repair</b></li>
+            <i>Provided computer repair services from home during career break, troubleshooting hardware and software issues for clients. Managed client communications, scheduling, and invoicing independently.</i>
+
+      </ul>
+    </div>
+
+    <div class="section-block">
+      <h2>Additional Experience</h2>
+      <ul>
+        <li><b>Assisting Friends and Relatives’ Shop</b></li>
+            Provided hands-on support to friends' and relatives' small businesses during the COVID-19 period and holiday seasons. Responsibilities included assisting with sales, customer service, stock arrangement, and daily operations in a veriety of business settings such as:
+            <i><div class="sub-list">
+             
+              - Footwear retail (shoe shop)
+              <div class="sub-list">
+              - Poultry feed distribution
+              <div class="sub-list">
+              - Aluminium & plastic products store
+              <div class="sub-list">
+              - Grocery retail shop
+              <div class="sub-list">
+              - Vehicle rental services (car/van hire)
+              <div class="sub-list">
+              - Apparel retail (dress shop)
+            
+            </div>
+          </i>
+            
+      </ul>
+    </div>
+
+    <div class="section-block">
+  <h2>Development & Achievements</h2>
+  <ul>
+    <li>
+      <a href="https://learn.microsoft.com/en-gb/users/sinan57/transcript/76w58aowrgqg1z2" target="_blank">
+        Microsoft Learn</a></li>
+    <li>
+      <a href="https://www.credly.com/users/sinan7" target="_blank">
+        Credly</a></li>
+  </ul>
 </div>
 
-<section>
+
 
   <div class="section-block">
-    <h2>Professional Summary</h2>
-    <p>
-      An experienced IT Professional with over 7 years of combined experience in IT support, IT asset management,
-      ServiceNow, Microsoft 365, and Azure fundamentals across logistics, IT, construction, and oil & gas sectors.
-    </p>
-  </div>
+      <h2> Volunteer & Leadership Experience</h2>
+      <ul>
+        <li>Old Students Association | Kekunagolla National School - <a href="https://www.facebook.com/OSAKekunagolla"><i>OSAK</i></a></li>
+            <div class="sub-list">
+             <b>Member (2015 – Present)</b>
+             <div class="sub-list">
+             <b>Media Coordinator (2018 – 2022)</b>
+                <div class="sub-list"> <i>
+                 - Created and managed social media content for OSAK.
+                <div class="sub-list"> <i>
+                 - Managed media support for events including AGM, facilitating bulk SMS campaigns and organizing Google Sheets to collect data from old students.
+                <div class="sub-list"> <i>
+                 - Designed and implemented the association’s logo.</i>
+             </div></i></div></i></div></div></div>
+           <div class="sub-list">
+              <b>Event Participation</b>
+                <div class="sub-list"> <i>
+                  - Organized fundraising events such as Cricket Carnivals and Cultural Expedition.</i></div></div>
 
-  <div class="section-block">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Tata Consultancy Services</strong> – IT Field Engineer | Oct 2025 – Present</li>
-      <li><strong>DHL Global Forwarding</strong> – IT Support Engineer | Jun 2024 – May 2025</li>
-      <li><strong>Ainsteam Computers</strong> – IT Technician | Jul 2020 – May 2024</li>
-      <li><strong>Build Angles Engineering</strong> – IT & Document Management Assistant | 2017 – 2019</li>
-      <li><strong>Tabaldi Tradings (Qatar)</strong> – Administrative Assistant | 2016</li>
-      <li><strong>National Petroleum Services (Qatar)</strong> – Technical Clerk | 2014 – 2015</li>
-      <li><strong>ACS Computer Solutions</strong> – Desktop Support Technician | 2012 – 2013</li>
-      <li><strong>FINZ Japan Cycle Traders</strong> – Invoice Clerk | 2010 – 2011</li>
-      <li><strong>NetAssist International</strong> – Trainee Network Engineer | 2010 – 2011</li>
-    </ul>
-  </div>
-
-  <div class="section-block">
-    <h2>Professional Certifications</h2>
-    <ul>
-      <li>Microsoft Azure Fundamentals (AZ-900)</li>
-      <li>Microsoft Certified Professional (MCP)</li>
-      <li>Microsoft Certified Technology Specialist (MCTS)</li>
-      <li>CompTIA Networking</li>
-      <li>25+ Online Certifications</li>
-    </ul>
-  </div>
-
-  <div class="section-block">
-    <h2>Education</h2>
-    <ul>
-      <li>BSc Computer Science (Reading) – University of People</li>
-      <li>Advanced Level – Commerce Stream</li>
-      <li>Diploma in Computer Studies</li>
-    </ul>
-  </div>
-
-  <div class="section-block">
-    <h2>Entrepreneurial & Freelance Experience</h2>
-    <ul>
-      <li>Herbal Medicine Business – Managed sales & customer service</li>
-      <li>Poultry Farming – Managed operations & livestock care</li>
-      <li>Freelance Computer Repair – Hardware/software troubleshooting</li>
-    </ul>
-  </div>
-
-  <div class="section-block">
-    <h2>Additional Experience</h2>
-    <ul>
-      <li>Assisted family & friends’ businesses (retail, rental, grocery, apparel)</li>
-      <li>Handled sales, stock, and customer support</li>
-      <li>Worked across multiple business environments</li>
-    </ul>
-  </div>
-
-  <div class="section-block">
-    <h2>Volunteer & Leadership Experience</h2>
-    <ul>
-      <li>Old Students Association (OSAK) – Member & Media Coordinator</li>
-      <li>Managed social media, AGM support, SMS campaigns</li>
-      <li>Designed OSAK logo</li>
-      <li>Event participation: fundraising, cultural events</li>
-      <li>Al-Falah Welfare Association (AFWA) – Executive Member</li>
-    </ul>
-  </div>
-
-  <div class="section-block">
-    <h2>Soft Skills</h2>
-    <div class="skills">
-      <span>Adaptability</span>
-      <span>Problem Solving</span>
-      <span>Communication</span>
-      <span>Customer Service</span>
-      <span>Time Management</span>
-      <span>Teamwork</span>
+        <li>Al-Falah Welfare Association - <a href="https://www.facebook.com/AFWAKekunagolla"><i>AFWA</i></a></li>
+            <div class="sub-list">
+             <b>Executive Member (2015 – Present)</b>
+             <div class="sub-list"> <i>
+                 - Created and managed social media accounts, and designed logo for AFWA.</i></div></div>
+              
+      </ul>
     </div>
-  </div>
 
-  <div class="section-block">
-    <h2>Technical Skills</h2>
-    <div class="skills">
-      <span>IT Support</span>
-      <span>Active Directory</span>
-      <span>Office 365</span>
-      <span>Azure</span>
-      <span>Networking</span>
-      <span>ITSM Tools</span>
+
+    <div class="section-block">
+      <h2>Soft Skills</h2>
+      <div class="skills">
+        <span>Adaptability</span>
+        <span>Analytical</span>
+        <span>Collaboration</span>
+        <span>Communication</span>
+        <span>Customer Service</span>
+        <span>Detail-oriented</span>
+        <span>Problem Solving</span>
+        <span>Reliability</span>
+        <span>Time Management</span>
+        <span>Troubleshooting</span>
+
+      </div>
     </div>
-  </div>
 
-</section>
+   <div class="section-block">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <span>IT Support & Troubleshooting</span>
+        <span>Cloud & Microsoft Platforms</span>
+        <span>Networking & Infrastructure</span>
+        <span>Remote Support</span>
+        <span>Server & Active Directory</span>
+        <span>Incident Management</span>
+        <span>IT Asset Management</span>
+        <span>Communication Systems</span>
+        <span>Documentation & Reporting</span>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  © 2025 Sinan | Designed with 💻
-</footer>
+  
 
+  <footer>
+    &copy; 2025 Sinan | Designed with 💻
+  </footer>
 </body>
 </html>
