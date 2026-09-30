@@ -180,3 +180,9 @@ cython_debug/
 # Ignore ALL CSS files
 *.css
 
+# Ignore ALL HTML files except index.html
+*.html
+!index.html
+
+# Ignore ALL CSS files
+*.css
